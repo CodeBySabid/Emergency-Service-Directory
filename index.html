@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Emergency Service Directory</title>
     <!-- daisyui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- tailwind cdn -->
@@ -20,14 +19,14 @@
                 <a class="text-[#016f4c] font-black flex items-center gap-3 text-2xl max-sm:text-xl" href="#"><img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="logo">Emergerncy <br>Service</a>
                 <div class="flex justify-between gap-4 max-sm:gap-8 max-sm:mt-5">
                     <div class="w-[123px] h-[52px] max-sm:w-[85px] max-sm:h-[45px] bg-[#d2ffdc] flex items-center justify-center gap-2 rounded-3xl">
-                        <h1>0</h1>
+                        <h1 id="Red-Heart">0</h1>
                         <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="heart">
                     </div>
                     <div class="w-[123px] h-[52px] bg-[#d2ffdc] flex items-center justify-center gap-2 rounded-3xl max-sm:w-[85px] max-sm:h-[45px]">
                         <h1>100</h1>
-                        <img class="w-[24px] h-[24px]" src="./assets/coin.png" alt="heart">
+                        <img id="coin" class="w-[24px] h-[24px]" src="./assets/coin.png" alt="heart">
                     </div>
-                    <button class="btn w-[123px] hover:bg-[#acb2c1c5] h-[52px] max-sm:w-[85px] max-sm:h-[45px] text-white bg-[#00A63E] rounded-3xl"><span>0</span> Copy</button>
+                    <div class="w-[123px] flex justify-center items-center gap-1 h-[52px] max-sm:w-[85px] max-sm:h-[45px] text-white bg-[#00A63E] rounded-3xl"><span id="main-copy">0</span> Copy</div>
                 </div>
             </nav>
         </header>
@@ -42,144 +41,145 @@
                     <div class="w-[436px] h-[360px] max-sm:w-[350px]   bg-white p-8 rounded-2xl shadow-md">
                         <div class="flex justify-between mb-4">
                             <img class="w-[60px] h-[60px]" src="./assets/Icon.png" alt="emergency">
-                            <img class="w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
+                            <img class="Heart-icon w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
                         </div>
                         <div>
                             <h1 class="font-bold text-xl">National Emergency Number</h1>
                             <p class="text-lg text-[#343333]">National Emergency</p>
-                            <h1 class="mb-2 mt-2 text-3xl font-bold">999</h1>
+                            <h1 id="copy-button1-h1" class="mb-2 mt-2 text-3xl font-bold">999</h1>
                             <button class="btn mb-4 cursor-default rounded-2xl">All</button>
                             <div class="flex justify-between">
-                                <button class="max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="copy-button1" class="copy-btn max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i
+                                    id="copy-button1" class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="call-button1" class="main-Call max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
                     <div class="w-[436px] h-[360px] max-sm:w-[350px]   bg-white p-8 rounded-2xl shadow-md">
                         <div class="flex justify-between mb-4">
                             <img class="w-[60px] h-[60px]" src="./assets/police.png" alt="police">
-                            <img class="w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
+                            <img class="Heart-icon w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
                         </div>
                         <div>
                             <h1 class="font-bold text-xl">Police Helpline Number</h1>
                             <p class="text-lg text-[#343333]">Police</p>
-                            <h1 class="mb-2 mt-2 text-3xl font-bold">999</h1>
+                            <h1 id="copy-button2-h1" class="mb-2 mt-2 text-3xl font-bold">999</h1>
                             <button class="btn mb-4 cursor-default rounded-2xl">Police</button>
                             <div class="flex justify-between">
-                                <button class="max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="copy-button2" class="copy-btn max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="call-button2" class="main-Call max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
                     <div class="w-[436px] h-[360px] max-sm:w-[350px]   bg-white p-8 rounded-2xl shadow-md">
                         <div class="flex justify-between mb-4">
                             <img class="w-[60px] h-[60px]" src="./assets/fire-service.png" alt="assets/fire-service">
-                            <img class="w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
+                            <img class="Heart-icon w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
                         </div>
                         <div>
                             <h1 class="font-bold text-xl">Fire Service Number</h1>
                             <p class="text-lg text-[#343333]">Fire Service</p>
-                            <h1 class="mb-2 mt-2 text-3xl font-bold">999</h1>
+                            <h1 id="copy-button3-h1" class="mb-2 mt-2 text-3xl font-bold">999</h1>
                             <button class="btn mb-4 cursor-default rounded-2xl">Fire</button>
                             <div class="flex justify-between">
-                                <button class="max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="copy-button3" class="copy-btn max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="call-button3" class="main-Call max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
                     <div class="w-[436px] h-[360px] max-sm:w-[350px]   bg-white p-8 rounded-2xl shadow-md">
                         <div class="flex justify-between mb-4">
                             <img class="w-[60px] h-[60px]" src="./assets/ambulance.png" alt="emergency">
-                            <img class="w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
+                            <img class="Heart-icon w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
                         </div>
                         <div>
                             <h1 class="font-bold text-xl">Ambulance Service</h1>
                             <p class="text-lg text-[#343333]">Ambulance</p>
-                            <h1 class="mb-2 mt-2 text-3xl font-bold">1994-999999</h1>
+                            <h1 id="copy-button4-h1" class="mb-2 mt-2 text-3xl font-bold">1994-999999</h1>
                             <button class="btn mb-4 cursor-default rounded-2xl">Health</button>
                             <div class="flex justify-between">
-                                <button class="max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="copy-button4" class="main-Call copy-btn max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="call-button4" class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
                     <div class="w-[436px] h-[360px] max-sm:w-[350px]   bg-white p-8 rounded-2xl shadow-md">
                         <div class="flex justify-between mb-4">
                             <img class="w-[60px] h-[60px]" src="./assets/Icon.png" alt="emergency">
-                            <img class="w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
+                            <img class="Heart-icon w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
                         </div>
                         <div>
                             <h1 class="font-bold text-xl">Women & Child Helpline</h1>
                             <p class="text-lg text-[#343333]">Women & Child Helpline</p>
-                            <h1 class="mb-2 mt-2 text-3xl font-bold">109</h1>
+                            <h1 id="copy-button5-h1" class="mb-2 mt-2 text-3xl font-bold">109</h1>
                             <button class="btn mb-4 cursor-default rounded-2xl">Help</button>
                             <div class="flex justify-between">
-                                <button class="max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="copy-button5" class="copy-btn max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="call-button5" class="main-Call max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
                     <div class="w-[436px] h-[360px] max-sm:w-[350px]   bg-white p-8 rounded-2xl shadow-md">
                         <div class="flex justify-between mb-4">
                             <img class="w-[60px] h-[60px]" src="./assets/Icon.png" alt="emergency">
-                            <img class="w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
+                            <img class="Heart-icon w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
                         </div>
                         <div>
                             <h1 class="font-bold text-xl">Anti-Corruption Helpline</h1>
                             <p class="text-lg text-[#343333]">Anti-Corruption</p>
-                            <h1 class="mb-2 mt-2 text-3xl font-bold">106</h1>
+                            <h1 id="copy-button6-h1" class="mb-2 mt-2 text-3xl font-bold">106</h1>
                             <button class="btn mb-4 cursor-default rounded-2xl">Govt.</button>
                             <div class="flex justify-between">
-                                <button class="max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="copy-button6" class="copy-btn max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="call-button6" class="main-Call max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
                     <div class="w-[436px] h-[360px] max-sm:w-[350px]   bg-white p-8 rounded-2xl shadow-md">
                         <div class="flex justify-between mb-4">
                             <img class="w-[60px] h-[60px]" src="./assets/Icon.png" alt="emergency">
-                            <img class="w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
+                            <img class="Heart-icon w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
                         </div>
                         <div>
                             <h1 class="font-bold text-xl">Electricity Helpline</h1>
                             <p class="text-lg text-[#343333]">Electricity Outage</p>
-                            <h1 class="mb-2 mt-2 text-3xl font-bold">16216</h1>
+                            <h1 id="copy-button7-h1" class="mb-2 mt-2 text-3xl font-bold">16216</h1>
                             <button class="btn mb-4 cursor-default rounded-2xl">Electricity</button>
                             <div class="flex justify-between">
-                                <button class="max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="copy-button7" class="copy-btn max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="call-button7" class="main-Call max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
                     <div class="w-[436px] h-[360px] max-sm:w-[350px]   bg-white p-8 rounded-2xl shadow-md">
                         <div class="flex justify-between mb-4">
                             <img class="w-[60px] h-[60px]" src="./assets/Icon.png" alt="emergency">
-                            <img class="w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
+                            <img class="Heart-icon w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
                         </div>
                         <div>
                             <h1 class="font-bold text-xl">Brac Helpline</h1>
                             <p class="text-lg text-[#343333]">Brac</p>
-                            <h1 class="mb-2 mt-2 text-3xl font-bold">16445</h1>
+                            <h1 id="copy-button8-h1" class="mb-2 mt-2 text-3xl font-bold">16445</h1>
                             <button class="btn mb-4 cursor-default rounded-2xl">NGO</button>
                             <div class="flex justify-between">
-                                <button class="max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="copy-button8" class="copy-btn max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="call-button8"  class="main-Call max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
                     <div class="w-[436px] h-[360px] max-sm:w-[350px]   bg-white p-8 rounded-2xl shadow-md">
                         <div class="flex justify-between mb-4">
                             <img class="w-[60px] h-[60px]" src="./assets/Icon.png" alt="emergency">
-                            <img class="w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
+                            <img class="Heart-icon w-[24px] h-[24px]" src="./assets/heart2.png" alt="">
                         </div>
                         <div>
                             <h1 class="font-bold text-xl">Bangladesh Railway Helpline </h1>
                             <p class="text-lg text-[#343333]">Bangladesh Railway</p>
-                            <h1 class="mb-2 mt-2 text-3xl font-bold">163</h1>
+                            <h1 id="copy-button9-h1" class="mb-2 mt-2 text-3xl font-bold">163</h1>
                             <button class="btn mb-4 cursor-default rounded-2xl">Travel</button>
                             <div class="flex justify-between">
-                                <button class="max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="copy-button9" class="copy-btn max-sm:w-[140px] btn hover:bg-black hover:text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="call-button9" class="max-sm:w-[140px] btn hover:bg-[#acb2c1c5] bg-green-600 text-white flex items-center justify-center gap-1 w-[182px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
