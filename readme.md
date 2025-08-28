@@ -2,16 +2,14 @@ QA
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 Ans: 
 getElementById হলো এইচটিএমএল ফাইল এর মধ্যে থাকা নিদিষ্ট id দিয়ে এইচটিএমএল ফাইল এর tag কে নির্বাচন  করা ।
-
 getElementById হলো এইচটিএমএল ফাইল এর মধ্যে tag এর ক্লাস name দিয়ে এইচটিএমএল ফাইল এর tag কে নির্বাচন করা ।
-
 querySelector দিয়ে সিএসএস selector এর প্রথম element কে নির্বাচন হয়।
-
 querySelectorAll দিয়ে সিএসএস selector এর সকল element কে নির্বাচন করা যাই। যত গুলো সিএসএস selector এর সাথে মিলে যাই সে সকল element এক সাথে নির্বাচন করা করা যাই।
+
 2. How do you **create and insert a new element into the DOM**?
 Ans:
 নিউ element তৈরি করার জন্য HTML ট্যাগের নামটি স্ট্রিং আর্গুমেন্ট হিসেবে পাস করে লাগবে,(const newElement = document.createElement('div')) এবার আমরা element এর name, id, innerText ইত্যাদি পরিবর্তন করতে পারব। যেমন
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -27,8 +25,7 @@ Ans:
     container.appendChild(newElement);
   </script>
 </body>
-</html> -->
-
+</html>
 
 3. What is **Event Bubbling** and how does it work?
 Ans:
